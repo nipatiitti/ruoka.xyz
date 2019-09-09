@@ -89,16 +89,24 @@ ul {
     transition: background ease-in-out 0.1s;
 }
 
-.top-container > h1 {
+.top-container > div {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 #tunilogo {
-    width: 10em;
-    height: auto;
+    width: 23em;
+    height: 8em;
     filter: brightness(100);
+    background-image: url(../img/tuni.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#tunilogo:hover {
+    background-image: url("../img/tuni_thonk.png");
 }
 
 .nav-button:hover {
