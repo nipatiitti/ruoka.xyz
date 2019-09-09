@@ -1,9 +1,9 @@
 body {
     margin: 0;
     padding: 20px 40px;
-    
-    font-family: 'Open Sans', 'Helvetica', sans-serif;
-    
+
+    font-family: "Lato", sans-serif;
+
     background: #222;
     color: #fefefe;
 }
@@ -12,7 +12,13 @@ h1 {
     font-weight: 300;
 }
 
-.top-container, .current-date {
+h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+}
+
+.top-container,
+.current-date {
     text-align: center;
 }
 
@@ -38,27 +44,28 @@ h1 {
 
 .meal-name {
     font-size: 13pt;
-    font-weight: normal;
-    
+    font-weight: 200;
+
     text-transform: uppercase;
     color: #bbb;
 }
 
 .meal-prices {
     display: inline-block;
-    
+
     margin-left: 15px;
     font-size: 70%;
     font-weight: normal;
-    
+
     color: #888;
 }
 
 .meal-diets {
     display: inline-block;
-    
+
     margin-left: 15px;
-    
+
+    font-weight: 200;
     font-size: 75%;
     color: #888;
 }
@@ -73,13 +80,25 @@ ul {
     padding: 10px 15px;
     border: 1px solid #fefefe;
     border-radius: 3px;
-    
+
     font-size: 11pt;
-    
+
     background: transparent;
     color: #fefefe;
-    
+
     transition: background ease-in-out 0.1s;
+}
+
+.top-container > h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tunilogo {
+    width: 10em;
+    height: auto;
+    filter: brightness(100);
 }
 
 .nav-button:hover {
@@ -90,6 +109,6 @@ ul {
 .loading-icon {
     margin-top: 50px;
     text-align: center;
-    
+
     font-size: 200%;
 }
